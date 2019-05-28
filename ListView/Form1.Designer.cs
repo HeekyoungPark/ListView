@@ -49,12 +49,13 @@
             this.chWork});
             this.lvView.FullRowSelect = true;
             this.lvView.GridLines = true;
-            this.lvView.Location = new System.Drawing.Point(10, 13);
+            this.lvView.Location = new System.Drawing.Point(10, 12);
             this.lvView.Name = "lvView";
-            this.lvView.Size = new System.Drawing.Size(284, 150);
+            this.lvView.Size = new System.Drawing.Size(355, 150);
             this.lvView.TabIndex = 0;
             this.lvView.UseCompatibleStateImageBehavior = false;
             this.lvView.View = System.Windows.Forms.View.Details;
+            this.lvView.Click += new System.EventHandler(this.LvView_Click);
             // 
             // lblName
             // 
@@ -69,14 +70,14 @@
             // 
             this.txtName.Location = new System.Drawing.Point(56, 176);
             this.txtName.Name = "txtName";
-            this.txtName.Size = new System.Drawing.Size(156, 21);
+            this.txtName.Size = new System.Drawing.Size(227, 21);
             this.txtName.TabIndex = 2;
             // 
             // txtAge
             // 
             this.txtAge.Location = new System.Drawing.Point(56, 203);
             this.txtAge.Name = "txtAge";
-            this.txtAge.Size = new System.Drawing.Size(156, 21);
+            this.txtAge.Size = new System.Drawing.Size(227, 21);
             this.txtAge.TabIndex = 4;
             // 
             // lvlAge
@@ -92,7 +93,7 @@
             // 
             this.txtWork.Location = new System.Drawing.Point(56, 230);
             this.txtWork.Name = "txtWork";
-            this.txtWork.Size = new System.Drawing.Size(156, 21);
+            this.txtWork.Size = new System.Drawing.Size(227, 21);
             this.txtWork.TabIndex = 6;
             // 
             // lblWork
@@ -106,12 +107,13 @@
             // 
             // btnAdd
             // 
-            this.btnAdd.Location = new System.Drawing.Point(218, 176);
+            this.btnAdd.Location = new System.Drawing.Point(289, 176);
             this.btnAdd.Name = "btnAdd";
             this.btnAdd.Size = new System.Drawing.Size(76, 74);
             this.btnAdd.TabIndex = 7;
             this.btnAdd.Text = "추가";
             this.btnAdd.UseVisualStyleBackColor = true;
+            this.btnAdd.Click += new System.EventHandler(this.BtnAdd_Click);
             // 
             // chName
             // 
@@ -132,7 +134,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(305, 263);
+            this.ClientSize = new System.Drawing.Size(377, 263);
             this.Controls.Add(this.btnAdd);
             this.Controls.Add(this.txtWork);
             this.Controls.Add(this.lblWork);
@@ -145,7 +147,6 @@
             this.MaximizeBox = false;
             this.Name = "Form1";
             this.Text = "입력 목록 보기";
-            this.Load += new System.EventHandler(this.Form1_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 
